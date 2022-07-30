@@ -20,7 +20,7 @@
             <nav class="page-nav">
                 <a class="logo link" href="./index.html"> <span class="word-web">Web</span>Studio</a>
                 <ul class="menu list">
-                    <li class="menu-item"> <a class="link menu-link  current" href="./index.html">Студія</a> </li>
+                    <li class="menu-item"> <a class="link menu-link current" href="./index.html">Студія</a> </li>
                     <li class="menu-item"> <a class="link menu-link" href="./portfolio.html">Портфоліо</a> </li>
                     <li class="menu-item"> <a class="link menu-link" href="./index.html">Контакти</a> </li>
                 </ul>
@@ -45,11 +45,9 @@
     </header>
     <main class="main-section"> <!--Main content-->
         <section class="hero"><!--Hero Section-->
-
-            <div class="container"> 
-                
+            <div class="container">                
                 <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="order-button" type="button">Замовити послугу</button>
+                <button class="order-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section"> <!--Our features-->
@@ -99,9 +97,15 @@
             <div class="container">
                 <h2 class="h2-fonts">Чим ми займаємося</h2>
                 <ul class="list photo-list">
-                    <li class="img-list"><img src="./images/img1.jpg" alt="first photo" width="370" height="294"></li>
-                    <li class="img-list"><img src="./images/box22.jpg" alt="second photo" width="370" height="294"></li>
-                    <li class="img-list"><img src="./images/box33.jpg" alt="third photo" width="370" height="294"></li>
+                    <li class="img-list"><img src="./images/img1.jpg" alt="first photo" width="370" height="294">
+                        <p class="job-description">ДЕСКТОПНІ ДОДАТКИ</p>
+                    </li>
+                    <li class="img-list"><img src="./images/box22.jpg" alt="second photo" width="370" height="294">
+                        <p class="job-description">МОБІЛЬНІ ДОДАТКИ</p>
+                    </li>
+                    <li class="img-list"><img src="./images/box33.jpg" alt="third photo" width="370" height="294">
+                        <p class="job-description">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -361,5 +365,15 @@
         </div>
     </footer>
     
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="modal-close-btn-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
